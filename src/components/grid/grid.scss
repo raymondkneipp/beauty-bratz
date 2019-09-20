@@ -1,0 +1,85 @@
+@import "../../vars";
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: $gold;
+
+	.title {
+		max-height: 300px;
+		color: white;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 3.8em;
+		padding: 55px;
+		box-sizing: border-box;
+		text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.418);
+		text-transform: uppercase;
+	}
+
+	.block {
+		height: 300px;
+		color: white;
+		background-size: cover;
+		background-position: center;
+		padding: 30px;
+		box-sizing: border-box;
+		text-shadow: 0 0 0.3em rgba(0, 0, 0, 0.562);
+		font-size: 2em;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.before {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+
+	.after {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+}
+
+@media #{$sm} {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.title {
+		grid-column: 1 / 3;
+		font-size: 3em !important;
+		padding: 40px !important;
+	}
+
+	.wigs {
+		grid-row: 3/4;
+	}
+
+	.style {
+		grid-row: 5/6;
+	}
+}
+
+@media #{$xs} {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+
+	.title {
+		font-size: 2.5em !important;
+		padding: 30px !important;
+	}
+
+	.wigs {
+		grid-row: 4/5;
+	}
+
+	.style {
+		grid-row: 7/8;
+	}
+}

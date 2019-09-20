@@ -1,0 +1,51 @@
+@import "../../vars";
+
+#location {
+	padding: 60px 0;
+
+	.layout {
+		display: grid;
+		grid-template-columns: repeat(3, auto 1fr);
+		grid-gap: 30px;
+		align-items: center;
+		text-align: center;
+
+		.fas {
+			color: $gold;
+			margin: auto;
+		}
+
+		p {
+			margin: 0;
+			font-weight: 400;
+		}
+	}
+}
+
+@media #{$sm} {
+	#location {
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.layout {
+			grid-template-columns: auto 1fr;
+			text-align: left;
+		}
+	}
+}
+
+@media #{$xs} {
+	#location {
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.layout {
+			grid-template-columns: auto 1fr;
+			text-align: left;
+		}
+	}
+}

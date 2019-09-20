@@ -1,0 +1,100 @@
+@import "../../vars";
+
+#cta {
+	padding: 100px 0;
+	text-align: center;
+	background: $gold;
+
+	h3 {
+		font-size: 3.5em;
+		font-weight: 500;
+		margin: 0;
+		// color: $gold;
+		color: white;
+	}
+
+	h4 {
+		font-size: 1.5em;
+		font-weight: 300;
+		margin: 0 0 40px 0;
+		color: white;
+	}
+
+	.cta {
+		text-decoration: none;
+		// border: 2px solid $gold;
+		border: 2px solid white;
+		padding: 14px 20px;
+		text-transform: uppercase;
+		display: inline-block;
+		letter-spacing: 0.1em;
+		// border-radius: 5px;
+		transition: all 0.2s ease-out;
+		margin: 0 10px;
+		background-color: white;
+		// background-color: $gold;
+		color: $gold;
+		// color: white;
+
+		&:hover {
+			// background-color: white;
+			// color: $gold;
+			background-color: $gold;
+			color: white;
+		}
+	}
+
+	.sub {
+		text-decoration: none;
+		// border: 2px solid $gold;
+		border: 2px solid white;
+		padding: 14px 20px;
+		text-transform: uppercase;
+		display: inline-block;
+		letter-spacing: 0.1em;
+		// border-radius: 5px;
+		transition: all 0.2s ease-out;
+		background-color: $gold;
+		// background-color: white;
+		color: white;
+		// color: $gold;
+		margin: 0 10px;
+
+		&:hover {
+			// background-color: $gold;
+			// color: white;
+			background-color: white;
+			color: $gold;
+		}
+	}
+
+	.text {
+		padding: 5px 10px;
+		margin-top: 20px;
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media #{$xs} {
+	#cta {
+		.buttons {
+			flex-direction: column;
+
+			.cta {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}

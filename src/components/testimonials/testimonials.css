@@ -1,0 +1,130 @@
+#testimonials {
+  background-color: #f0ad4e;
+  padding: 50px 0 40px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 173, 78, 0.7)), to(rgba(240, 173, 78, 0.7))), url("../../images/brush.jpg");
+  background: linear-gradient(rgba(240, 173, 78, 0.7), rgba(240, 173, 78, 0.7)), url("../../images/brush.jpg");
+  -webkit-transform: translatez(0);
+          transform: translatez(0);
+  background-size: cover;
+  background-position: center;
+}
+
+#testimonials .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testimonials h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin: 0 0 40px 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 0.4em rgba(0, 0, 0, 0.267);
+}
+
+#testimonials .slider {
+  -webkit-box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.267);
+          box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.267);
+  overflow: hidden;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#testimonials .slider .card {
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px auto;
+      grid-template-columns: 120px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 25px;
+  grid-gap: 25px;
+  text-align: center;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#testimonials .slider .card .photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#testimonials .dots {
+  display: block;
+  margin-top: 20px;
+}
+
+#testimonials .dots .dot {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 100%;
+  opacity: 0.5;
+  margin: 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+#testimonials .dots .dot.active {
+  opacity: 1;
+}
+
+#testimonials .dots .dot:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#testimonials .dots .dot:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 100% !important;
+  }
+  .slider .card {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-gap: 0 !important;
+  }
+}
+/*# sourceMappingURL=testimonials.css.map */

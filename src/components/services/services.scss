@@ -1,0 +1,93 @@
+@import "../../vars";
+
+#services {
+	header {
+		background-color: $gold;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 100px 0 0 0;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+
+		h1 {
+			font-size: 4em;
+			font-weight: 400;
+			margin: 0;
+			color: white;
+		}
+
+		p {
+			font-size: 1.2em;
+			font-weight: 300;
+			margin: 0;
+			color: black;
+		}
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			border: 1px solid rgba(0, 0, 0, 0.13);
+			box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.13);
+			padding: 20px;
+			text-align: center;
+
+			.fas {
+				color: $gold;
+				font-size: 4em;
+			}
+
+			p {
+				flex-grow: 1;
+				margin-bottom: 20px;
+			}
+
+			h3 {
+				font-size: 1.5em;
+				font-weight: 500;
+			}
+
+			a {
+				text-decoration: none;
+				padding: 14px 20px;
+				text-transform: uppercase;
+				display: inline-block;
+				letter-spacing: 0.1em;
+				transition: all 0.2s ease-out;
+				background-color: $gold;
+				color: white;
+				display: block;
+				text-align: center;
+
+				&:hover {
+					background-color: darken($gold, 10%);
+				}
+			}
+		}
+	}
+}
+
+@media #{$sm} {
+	#services {
+		.container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media #{$xs} {
+	#services {
+		.container {
+			grid-template-columns: 1fr;
+		}
+	}
+}

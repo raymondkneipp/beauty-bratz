@@ -1,0 +1,161 @@
+@media screen and (max-width: 767px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0 !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 10px !important;
+  }
+  nav ul.open {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  nav ul.close {
+    display: none !important;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  nav #toggle {
+    display: block !important;
+  }
+  nav .logo {
+    width: 100%;
+    padding-right: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  nav {
+    padding-right: 0 !important;
+  }
+  .logo {
+    width: 100%;
+    padding-right: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  z-index: 100;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav.dark {
+  background-color: #1a1a1a;
+}
+
+nav.open {
+  background-color: #1a1a1a;
+}
+
+nav.open #toggle .bar:nth-child(1) {
+  -webkit-transform: translateY(9px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg);
+}
+
+nav.open #toggle .bar:nth-child(2) {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+}
+
+nav.open #toggle .bar:nth-child(3) {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+          transform: translateY(-9px) rotate(-45deg);
+}
+
+nav .logo {
+  max-width: 300px;
+}
+
+nav #toggle {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 33px;
+  display: none;
+  cursor: pointer;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+nav #toggle:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  background: rgba(187, 187, 187, 0.2);
+}
+
+nav #toggle .bar {
+  width: 25px;
+  height: 2px;
+  background-color: #bbbbbb;
+  display: block;
+  margin: 7px 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav #toggle:hover .bar {
+  background-color: white;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #bbbbbb;
+  padding: 1em 1.3em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+}
+
+nav ul li a.active {
+  color: white !important;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+/*# sourceMappingURL=navbar.css.map */

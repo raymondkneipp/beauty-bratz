@@ -1,0 +1,86 @@
+@import "../../vars";
+
+#contact {
+	header {
+		background-color: $gold;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		padding: 100px 0 0 0;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+
+		h1 {
+			font-size: 4em;
+			font-weight: 400;
+			margin: 0;
+			color: white;
+		}
+
+		p {
+			font-size: 1.2em;
+			font-weight: 300;
+			margin: 0;
+			color: black;
+		}
+	}
+
+	.container {
+		width: 50%;
+		padding-top: 60px;
+		padding-bottom: 40px;
+		min-height: 50vh;
+
+		form {
+			display: flex;
+			flex-direction: column;
+
+			input,
+			textarea {
+				background: lighten($gray, 22%);
+				border: none;
+				font-size: 0.9em;
+				padding: 15px 20px;
+				margin-bottom: 20px;
+				resize: vertical;
+			}
+
+			label {
+				margin-bottom: 5px;
+				font-weight: 300;
+			}
+
+			button {
+				padding: 14px 20px;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				transition: all 0.2s ease-out;
+				background-color: $gold;
+				color: white;
+				text-align: center;
+				border: none;
+
+				&:hover {
+					background-color: darken($gold, 10%);
+				}
+			}
+		}
+	}
+}
+
+@media #{$sm} {
+	#contact {
+		.container {
+			width: 70%;
+		}
+	}
+}
+
+@media #{$xs} {
+	#contact {
+		.container {
+			width: 100%;
+		}
+	}
+}

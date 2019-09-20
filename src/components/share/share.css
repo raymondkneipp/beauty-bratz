@@ -1,0 +1,39 @@
+.share {
+  background-color: white;
+  padding: 10px 0;
+}
+
+.share .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 600px;
+}
+
+.share .container a:nth-child(1) .fab:hover {
+  color: #3b5998;
+}
+
+.share .container a:nth-child(2) .fab:hover {
+  color: #b8559d;
+}
+
+.share .container a:nth-child(3) .fab:hover {
+  color: #28aae1;
+}
+
+.share .container .fab {
+  color: #bbbbbb;
+  font-size: 3em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  padding: 10px;
+}
+
+.share .container .fab:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=share.css.map */

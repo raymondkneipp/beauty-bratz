@@ -1,0 +1,71 @@
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../../images/hero.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+  max-width: 40%;
+  line-height: 1.7em;
+}
+
+.hero h1 span.em {
+  background-color: white;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.hero .cta {
+  color: #f0ad4e;
+  text-decoration: none;
+  border: 2px solid #f0ad4e;
+  padding: 14px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.hero .cta:hover {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .hero .container {
+    text-align: center;
+  }
+  .hero h1 {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero .container {
+    text-align: center;
+  }
+  .hero h1 {
+    max-width: 70%;
+    margin: 25px auto;
+  }
+}
+/*# sourceMappingURL=hero.css.map */

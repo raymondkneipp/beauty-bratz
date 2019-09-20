@@ -1,0 +1,35 @@
+@import "../../vars";
+
+.share {
+	background-color: white;
+	padding: 10px 0;
+
+	.container {
+		display: flex;
+		justify-content: space-around;
+		max-width: 600px;
+
+		a:nth-child(1) .fab:hover {
+			color: #3b5998;
+		}
+
+		a:nth-child(2) .fab:hover {
+			color: #b8559d;
+		}
+
+		a:nth-child(3) .fab:hover {
+			color: #28aae1;
+		}
+
+		.fab {
+			color: $gray;
+			font-size: 3em;
+			transition: all 0.2s ease-out;
+			padding: 10px;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
