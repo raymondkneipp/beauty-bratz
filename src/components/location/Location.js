@@ -31,5 +31,5 @@ const Location = ({ google }) => {
 };
 
 export default GoogleApiWrapper({
-	apiKey: process.env.ACCESS_KEY
+	apiKey: "AIzaSyAKK2wsmuK9OvWN8f1_6GvDdcpuPkF3RWQ"
 })(Location);
