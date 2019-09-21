@@ -21,7 +21,15 @@
 			}
 
 			li {
-				margin-bottom: 10px;
+				display: block;
+				width: 100%;
+				display: flex;
+
+				a {
+					display: block;
+					flex-grow: 1;
+					padding-left: 1.6em !important;
+				}
 			}
 		}
 
@@ -74,8 +82,8 @@ nav {
 			}
 
 			.bar:nth-child(2) {
-				// opacity: 0;
-				transform: translateX(100px);
+				opacity: 0;
+				// transform: translateX(100px);
 			}
 
 			.bar:nth-child(3) {
