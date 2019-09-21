@@ -1,0 +1,5 @@
+[build]
+	publish="build"
+
+[context.production.environment]
+	ACCESS_KEY = "AIzaSyAKK2wsmuK9OvWN8f1_6GvDdcpuPkF3RWQ"
