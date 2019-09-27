@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter, Link } from "react-router-dom";
 
 import logo from "../../images/beauty-bratz.svg";
 import "./navbar.css";
@@ -21,7 +21,9 @@ const Navbar = ({ location, history }) => {
 
 	return (
 		<nav className={(open ? "open" : "") + (filled ? " dark" : "")}>
-			<img src={logo} alt="Beauty Bratz" className="logo" />
+			<Link to="/">
+				<img src={logo} alt="Beauty Bratz" className="logo" />
+			</Link>
 
 			<button
 				type="button"
