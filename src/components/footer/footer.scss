@@ -16,7 +16,6 @@
 		}
 
 		.icon {
-			opacity: 0.1;
 			width: 100px;
 		}
 
@@ -27,7 +26,6 @@
 
 		h6 {
 			font-size: 1.2em;
-			opacity: 0.2;
 			color: white;
 			margin: 0;
 			font-weight: 400;
@@ -36,7 +34,6 @@
 		a {
 			text-decoration: none;
 			color: white;
-			opacity: 0.2;
 			font-weight: 400;
 			padding: 10px 20px;
 			display: flex;
@@ -45,7 +42,6 @@
 			transition: all 0.3s;
 
 			&:hover {
-				opacity: 0.8;
 				background: lighten($black, 10%);
 			}
 		}

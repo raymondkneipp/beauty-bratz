@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 import logo from "../../images/icon-white.svg";
 import rk from "../../images/rk.svg";
@@ -8,7 +9,9 @@ const Footer = () => {
 		<div id="footer">
 			<div className="container">
 				<div className="col">
-					<h6>Beauty Bratz</h6>
+					<Link to="/">
+						<h6>Beauty Bratz</h6>
+					</Link>
 				</div>
 				<div className="col">
 					<img src={logo} alt="Beauty Bratz" className="icon" />
