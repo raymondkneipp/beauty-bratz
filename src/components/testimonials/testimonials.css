@@ -1,12 +1,17 @@
 #testimonials {
   background-color: #f0ad4e;
-  padding: 50px 0 40px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 173, 78, 0.7)), to(rgba(240, 173, 78, 0.7))), url("../../images/brush.jpg");
   background: linear-gradient(rgba(240, 173, 78, 0.7), rgba(240, 173, 78, 0.7)), url("../../images/brush.jpg");
   -webkit-transform: translatez(0);
           transform: translatez(0);
   background-size: cover;
   background-position: center;
+}
+
+#testimonials .blur {
+  padding: 50px 0 40px 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 #testimonials .container {

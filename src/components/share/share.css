@@ -1,6 +1,5 @@
 .share {
-  background-color: white;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .share .container {
@@ -24,6 +23,10 @@
   color: #28aae1;
 }
 
+.share .container a:nth-child(4) .fab:hover {
+  color: #2d78b5;
+}
+
 .share .container .fab {
   color: #bbbbbb;
   font-size: 3em;
@@ -35,5 +38,11 @@
 .share .container .fab:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+  .share .fab {
+    font-size: 2rem !important;
+  }
 }
 /*# sourceMappingURL=share.css.map */

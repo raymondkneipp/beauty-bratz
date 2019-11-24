@@ -3,6 +3,11 @@
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/hero.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.hero .blur {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,9 +23,10 @@
 .hero h1 {
   color: white;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 2rem;
   max-width: 40%;
   line-height: 1.7em;
+  margin: 0 0 1rem 0;
 }
 
 .hero h1 span.em {
@@ -33,7 +39,43 @@
   font-weight: 400;
 }
 
+.hero h2 {
+  color: #aaa;
+  font-weight: 300;
+  font-size: 1.3rem;
+  max-width: 40%;
+  line-height: 1.7em;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero .btnGrid {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 .hero .cta {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #f0ad4e;
+  padding: 14px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  background-color: #f0ad4e;
+  text-align: center;
+}
+
+.hero .cta:hover {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+
+.hero .subCta {
   color: #f0ad4e;
   text-decoration: none;
   border: 2px solid #f0ad4e;
@@ -43,11 +85,13 @@
   letter-spacing: 0.1em;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  text-align: center;
 }
 
-.hero .cta:hover {
-  background-color: #f0ad4e;
-  color: white;
+.hero .subCta:hover {
+  border-color: #df8a13;
+  color: #df8a13;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 767px) {
@@ -57,13 +101,21 @@
   .hero h1 {
     max-width: 100%;
   }
+  .hero h2 {
+    display: none;
+  }
+  .hero .btnGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hero .container {
     text-align: center;
   }
-  .hero h1 {
+  .hero h1,
+  .hero h2 {
     max-width: 70%;
     margin: 25px auto;
   }

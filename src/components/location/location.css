@@ -22,6 +22,10 @@
 #location .layout p {
   margin: 0;
   font-weight: 400;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

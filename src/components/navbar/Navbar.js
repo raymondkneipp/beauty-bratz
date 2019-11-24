@@ -5,75 +5,75 @@ import logo from "../../images/beauty-bratz.svg";
 import "./navbar.css";
 
 const Navbar = ({ location, history }) => {
-	const [open, setOpen] = useState(false);
-	const [filled, setFilled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [filled, setFilled] = useState(false);
 
-	useEffect(() => {
-		setFilled(location.pathname !== "/" ? true : false);
+  useEffect(() => {
+    setFilled(location.pathname !== "/" ? true : false);
 
-		const unlisten = history.listen(() => {
-			window.scrollTo(0, 0);
-		});
-		return () => {
-			unlisten();
-		};
-	}, [location.pathname, filled, history]);
+    const unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    };
+  }, [location.pathname, filled, history]);
 
-	return (
-		<nav className={(open ? "open" : "") + (filled ? " dark" : "")}>
-			<Link to="/">
-				<img src={logo} alt="Beauty Bratz" className="logo" />
-			</Link>
+  return (
+    <nav className={(open ? "open" : "") + (filled ? " dark" : "")}>
+      <Link to="/">
+        <img src={logo} alt="Beauty Bratz" className="logo" />
+      </Link>
 
-			<button
-				type="button"
-				id="toggle"
-				onClick={() => {
-					setOpen(!open);
-				}}
-			>
-				<span className="bar"></span>
-				<span className="bar"></span>
-				<span className="bar"></span>
-			</button>
+      <button
+        type="button"
+        id="toggle"
+        onClick={() => {
+          setOpen(!open);
+        }}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
 
-			<ul className={open ? "open" : "close"}>
-				<li>
-					<NavLink
-						exact
-						activeClassName="active"
-						to="/"
-						onClick={() => setOpen(false)}
-					>
-						Home
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						activeClassName="active"
-						to="/services/"
-						onClick={() => setOpen(false)}
-					>
-						Services
-					</NavLink>
-				</li>
-				{/* <li>
+      <ul className={open ? "open" : "close"}>
+        <li>
+          <NavLink
+            exact
+            activeClassName="active"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="active"
+            to="/services/"
+            onClick={() => setOpen(false)}
+          >
+            Services
+          </NavLink>
+        </li>
+        {/* <li>
 					<NavLink activeClassName="active" to="/products/" onClick={() => setOpen(false)}>
 						Products
 					</NavLink>
 				</li> */}
-				<li>
-					<NavLink
-						activeClassName="active"
-						to="/contact/"
-						onClick={() => setOpen(false)}
-					>
-						Contact
-					</NavLink>
-				</li>
-			</ul>
-		</nav>
-	);
+        <li>
+          <NavLink
+            activeClassName="active"
+            to="/contact/"
+            onClick={() => setOpen(false)}
+          >
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default withRouter(Navbar);
