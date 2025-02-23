@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="blur">
         <div className="container">
           <h1>
-            Hair Replacement Service & Salon in <strong>Milford, OH</strong>
+            Hair Replacement Service and Salon in <strong>Milford, OH</strong>
           </h1>
           <h2>Today's Hours: {hours[date.getDay()]}</h2>
           <div className="btnGrid">
