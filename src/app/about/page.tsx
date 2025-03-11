@@ -42,7 +42,7 @@ export default function AboutPage() {
 
     return (
         <Navbar>
-            <div className="py-12 container px-2 mx-auto grid md:grid-cols-3 gap-x-12">
+            <div className="py-12 container px-2 mx-auto grid md:grid-cols-3 gap-12">
                 <Image
                     src={owner}
                     alt="Gail Gibson"
@@ -73,7 +73,7 @@ export default function AboutPage() {
                         loss regain their confidence.
                     </p>
 
-                    <div className="flex items-center justify-start gap-x-12 gap-y-6">
+                    <div className="flex items-center justify-start gap-x-12 gap-y-6 flex-wrap">
                         <Stat
                             name="Years of expertise"
                             value={years.toString()}
