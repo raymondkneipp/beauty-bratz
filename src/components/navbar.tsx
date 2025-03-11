@@ -16,7 +16,7 @@ export function Navbar(props: { children: React.ReactNode }) {
             <div
                 className={
                     "bg-neutral-950 overflow-hidden pt-2 transition-all duration-800 ease-in-out " +
-                    (open ? "max-h-[1000px]" : "max-h-0")
+                    (open ? "max-h-[9000px]" : "max-h-0")
                 }
             >
                 <nav className="text-neutral-50 pt-12">
