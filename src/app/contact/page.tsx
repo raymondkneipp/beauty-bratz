@@ -8,10 +8,12 @@ export default function ContactPage() {
                     Connect with us
                 </h1>
 
-                <form className="flex flex-col gap-6">
+                <form name="contact" className="flex flex-col gap-6">
                     <label className="flex flex-col gap-2 border border-neutral-200 p-6 rounded-3xl relative focus-within:border-neutral-950 transition-all duration-300 ease-in-out">
                         <input
                             type="text"
+                            name="name"
+                            required
                             className="peer focus:outline-none relative top-2"
                             placeholder=" "
                         />
@@ -22,6 +24,8 @@ export default function ContactPage() {
                     <label className="flex flex-col gap-2 border border-neutral-200 p-6 rounded-3xl relative focus-within:border-neutral-950 transition-all duration-300 ease-in-out">
                         <input
                             type="email"
+                            name="email"
+                            required
                             className="peer focus:outline-none relative top-2"
                             placeholder=" "
                         />
@@ -31,6 +35,8 @@ export default function ContactPage() {
                     </label>
                     <label className="flex flex-col gap-2 border border-neutral-200 p-6 rounded-3xl relative focus-within:border-neutral-950 transition-all duration-300 ease-in-out">
                         <textarea
+                            name="message"
+                            required
                             className="peer focus:outline-none relative top-2 min-h-[100px] resize-none"
                             placeholder=" "
                         ></textarea>
@@ -39,7 +45,10 @@ export default function ContactPage() {
                         </span>
                     </label>
 
-                    <button className="bg-neutral-950 text-white rounded-full px-6 py-2 font-semibold text-lg hover:bg-neutral-800 transition-colors duration-300 ease-in-out hover:shadow-md cursor-pointer">
+                    <button
+                        type="submit"
+                        className="bg-neutral-950 text-white rounded-full px-6 py-2 font-semibold text-lg hover:bg-neutral-800 transition-colors duration-300 ease-in-out hover:shadow-md cursor-pointer"
+                    >
                         Send
                     </button>
                 </form>
