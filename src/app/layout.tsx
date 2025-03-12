@@ -1,3 +1,4 @@
+import { unstable_ViewTransition as ViewTransition } from "react";
 import type { Metadata } from "next";
 import { Mona_Sans, Dancing_Script } from "next/font/google";
 import "./globals.css";
@@ -29,7 +30,7 @@ export default function RootLayout({
             <body
                 className={`${monoSans.variable} ${dancingScript.variable} bg-neutral-950 antialiased font-sans`}
             >
-                {children}
+                <ViewTransition name="page">{children}</ViewTransition>
             </body>
         </html>
     );

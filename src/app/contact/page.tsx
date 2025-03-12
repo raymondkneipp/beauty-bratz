@@ -8,12 +8,7 @@ export default function ContactPage() {
                     Connect with us
                 </h1>
 
-                <form
-                    name="contact"
-                    method="POST"
-                    data-netlify="true"
-                    className="flex flex-col gap-6"
-                >
+                <form name="contact" className="flex flex-col gap-6">
                     <label className="flex flex-col gap-2 border border-neutral-200 p-6 rounded-3xl relative focus-within:border-neutral-950 transition-all duration-300 ease-in-out">
                         <input
                             type="text"
