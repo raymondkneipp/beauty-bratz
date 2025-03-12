@@ -1,5 +1,6 @@
 import { navRoutes, routes, socialRoutes } from "@/config/routes";
 import { Logo } from "./logo";
+import Link from "next/link";
 
 const footerLinks = [
     {
@@ -24,14 +25,12 @@ export function Footer() {
                         <ul className="flex flex-col gap-4">
                             {links.map((link) => (
                                 <li key={link.label}>
-                                    <a
+                                    <Link
                                         href={link.href}
-                                        target="_blank"
-                                        rel="noreferrer"
                                         className="text-neutral-600 hover:text-neutral-950 transition-colors duration-300 ease-in-out"
                                     >
                                         {link.label}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
